@@ -1,0 +1,93 @@
+$green: #30ae63
+$grey: #8c9ba5
+$lightgrey: #dfe3e6
+
+@import top-block
+@import link-block
+@import heading-block
+
+body
+	font: 14px "Open Sans", sans-serif
+	background-color: rgba(90, 104, 114, .08)
+	margin: 0
+
+*
+	box-sizing: border-box
+	
+.listing
+	display: flex
+	height: 258px
+	background-color: white
+	padding: 15px 20px
+	&-image
+		width: 25%
+		& img
+			max-width: 100%
+			height: auto
+	&-info
+		width: 55%
+		& a
+			font-size: 16px
+	&-pricing
+		width: 20%
+	
+.dots
+	@extend .centering-block
+	width: 100%
+	margin: 40px 0
+	
+.dots__item
+	border: 2px solid $green
+	border-radius: 50%
+	margin: 0 6px
+	height: 14px
+	width: 14px
+
+.dots__item:hover
+	background-color: $green
+
+header
+	width: 100%
+	background-color: $green
+	color: white
+	padding: 0 10% 10px
+
+.content
+	width: 80%
+	margin: 0 auto
+	
+.centering-block
+	display: flex
+	justify-content: center
+
+.button
+	min-height: 40px
+	text-align: center
+	border-radius: 2px
+	
+.button_green
+	padding: 10px 0
+	background-color: $green
+	color: white
+	
+.button_green:hover
+	background-color: $grey
+
+.link_hover:hover
+	color: $grey
+	
+.underlined-button
+	padding: 10px
+	border-bottom: 3px solid transparent
+		
+.text_non-decorated
+	text-decoration: none
+	
+.title_centering
+	max-width: 600px
+	text-align: center
+
+.logo
+	width: 100%
+	text-align: center
+	margin: 20px 0 50px 0
