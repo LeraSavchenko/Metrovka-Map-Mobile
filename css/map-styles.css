@@ -99,25 +99,31 @@
   color: blue;
   margin: 0 5px; }
 
-body {
-  font: 14px "Open Sans", sans-serif;
-  background-color: rgba(90, 104, 114, 0.08);
-  margin: 0; }
-
-* {
-  box-sizing: border-box; }
-
 .listing {
   display: flex;
   background-color: white;
-  padding: 15px 20px; }
+  padding: 15px 20px;
+  margin-bottom: 30px; }
+  .listing__link {
+    color: blue; }
+    .listing__link:hover {
+      color: #8c9ba5; }
   .listing-image {
     width: 24%; }
     .listing-image img {
       max-width: 100%;
       height: auto; }
   .listing-pricing {
-    width: 21%; }
+    width: 23%; }
+    .listing-pricing__next {
+      font-size: 12px;
+      text-align: right;
+      margin-top: 140px;
+      line-height: 0.8; }
+      .listing-pricing__next_link {
+        color: #979797; }
+        .listing-pricing__next_link:hover {
+          color: #30ae63; }
     .listing-pricing__uah {
       font-size: 18px;
       margin: 0;
@@ -139,8 +145,47 @@ body {
       .listing-pricing__usd__rate:hover {
         color: #30ae63;
         border-bottom: 2px solid #30ae63; }
+    .listing-pricing-connect {
+      height: 32px;
+      display: flex;
+      text-align: center;
+      float: right; }
+      .listing-pricing-connect img {
+        transform: translateY(40%); }
+      .listing-pricing-connect__call {
+        border: 2px solid #30ae63;
+        border-radius: 3px;
+        padding: 0 25px; }
+        .listing-pricing-connect__call:hover {
+          border: 2px solid #8c9ba5; }
+      .listing-pricing-connect__text {
+        border: 2px solid blue;
+        border-radius: 3px;
+        padding: 0 25px;
+        margin-left: 3px; }
+        .listing-pricing-connect__text:hover {
+          border: 2px solid #8c9ba5; }
+    .listing-pricing__label {
+      float: right;
+      font-size: 13px;
+      margin: 20px 0;
+      height: 36px;
+      line-height: 36px; }
+      .listing-pricing__label img {
+        transform: translateY(20%);
+        margin-left: 10px; }
+      .listing-pricing__label_red {
+        background-color: #ffefea;
+        color: #d00202;
+        border-radius: 3px;
+        padding: 0 10px; }
+      .listing-pricing__label_green {
+        background-color: #eafff5;
+        color: #30ae63;
+        border-radius: 3px;
+        padding: 0 10px; }
   .listing-info {
-    width: 55%;
+    width: 53%;
     padding-left: 10px;
     padding-right: 100px;
     font-size: 13px; }
@@ -187,6 +232,14 @@ body {
     color: #9b9b9b;
     margin-left: 20px; }
 
+body {
+  font: 14px "Open Sans", sans-serif;
+  background-color: rgba(90, 104, 114, 0.08);
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
 header {
   width: 100%;
   background-color: #30ae63;
@@ -213,9 +266,6 @@ header {
 
 .button_green:hover {
   background-color: #8c9ba5; }
-
-.link_hover:hover {
-  color: #8c9ba5; }
 
 .underlined-button, .top-button {
   padding: 10px;

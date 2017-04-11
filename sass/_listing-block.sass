@@ -1,0 +1,133 @@
+.listing
+	display: flex
+	background-color: white
+	padding: 15px 20px
+	margin-bottom: 30px
+	&__link
+		color: blue
+		&:hover
+			color: $grey
+	&-image
+		width: 24%
+		& img
+			max-width: 100%
+			height: auto
+	&-pricing
+		width: 23%
+		&__next
+			font-size: 12px
+			text-align: right
+			margin-top: 140px
+			line-height: 0.8
+			&_link
+				color: #979797
+				&:hover
+					color: $green
+		&__uah
+			font-size: 18px
+			margin: 0
+			text-align: right
+		&__usd
+			font-size: 14px
+			display: flex
+			& label
+				color: $mediumgrey
+				text-align: right
+				line-height: 31px
+				margin-right: 15px
+				width: 80%
+			&__rate
+				width: 100%
+				padding: 5px
+				color: $mediumgrey
+				border-bottom: 2px solid $mediumgrey
+			&__rate:hover
+				color: $green
+				border-bottom: 2px solid $green
+		&-connect
+			height: 32px
+			display: flex
+			text-align: center
+			float: right
+			& img
+				transform: translateY(40%)
+			&__call
+				border: 2px solid $green
+				border-radius: 3px
+				padding: 0 25px
+				&:hover
+					border: 2px solid $grey
+			&__text
+				border: 2px solid blue
+				border-radius: 3px
+				padding: 0 25px
+				margin-left: 3px
+				&:hover
+					border: 2px solid $grey
+		&__label
+			float: right
+			font-size: 13px
+			margin: 20px 0
+			height: 36px
+			line-height: 36px
+			& img
+				transform: translateY(20%)
+				margin-left: 10px
+			&_red
+				background-color: #ffefea
+				color: #d00202
+				border-radius: 3px
+				padding: 0 10px
+			&_green
+				background-color: #eafff5
+				color: $green
+				border-radius: 3px
+				padding: 0 10px
+	&-info
+		width: 53%
+		padding-left: 10px
+		padding-right: 100px
+		font-size: 13px
+		& a
+			font-size: 16px
+		&-location
+			display: flex
+			margin-top: 10px
+		&-dots
+			@extend .centering-block
+			width: 100%
+			margin: 20px 0
+			&__item
+				border-radius: 50%
+				background-color: #d8d8d8
+				margin: 0 6px
+				height: 10px
+				width: 10px
+			&__item:hover
+				background-color: #979797
+		&-features
+			margin-top: 20px
+			&__title
+				color: $grey
+				font-size: 12px
+			&__square
+				display: flex
+				color: $darkgrey
+				margin: 10px 0 20px
+				font-size: 12px	
+	
+.subway-identifier
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	margin-top: 5px
+	margin-right: 10px
+	&_green
+		background-color: green
+	&_red
+		background-color: red
+	&_blue
+		background-color: blue
+	&__distance
+		color: $mediumgrey
+		margin-left: 20px
