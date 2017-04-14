@@ -3,7 +3,7 @@
 		margin: 0
 		width: 75%
 
-	.top-menu_right ul li:nth-child(3)
+	.top-menu__actions ul li:nth-child(3)
 		display: none
 	
 @media screen and (min-width: 880px) and (max-width: 1279px)
@@ -11,7 +11,7 @@
 		margin: 0 auto
 		width: 80%
 
-	.top-menu_right ul li:nth-child(3)
+	.top-menu__actions ul li:nth-child(3)
 		display: none
 
 @media screen and (max-width: 879px)
@@ -19,10 +19,10 @@
 		width: 100%
 		padding: 0 1rem
 
-	.top-menu_left ul li:nth-child(n+3)
+	.top-menu__nav ul li:nth-child(n+3)
 		display: none
 
-	.top-menu_right ul li:nth-child(-n+2)
+	.top-menu__actions ul li:nth-child(-n+2)
 		display: none
 
 	.hamburger
@@ -42,13 +42,13 @@
 	padding: 0
 	list-style: none
 
-.top-menu_left
+.top-menu__nav
 	width: 60%
 	& li
 		display: inline-block
 		margin-right: 0.2rem
 	
-.top-menu_right
+.top-menu__actions
 	width: 40%
 	margin-top: 10px
 	margin-left: auto

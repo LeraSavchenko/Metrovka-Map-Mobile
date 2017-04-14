@@ -1,11 +1,8 @@
-$green: #30ae63
-$hovergreen: #50db88
-$grey: #8c9ba5
-$lightgrey: #dfe3e6
-$mediumgrey: #9b9b9b
-$darkgrey: #4a4a4a
-$footercontent: #152935
-
+@import variables
+@import button-styles
+@import elem-styles
+@import link-styles
+	
 @import top-block
 @import footer-block
 @import heading-block
@@ -64,59 +61,16 @@ header
 .centering-block
 	display: flex
 	justify-content: center
-
-.button
-	min-height: 40px
-	text-align: center
-	border-radius: 2px
-	
-.button_green
-	padding: 10px 0
-	background-color: $green
-	color: white
-	
-.button_green:hover
-	background-color: $hovergreen
-
-.underlined-button
-	padding: 10px
-	border-bottom: 3px solid transparent
-		
-.text_non-decorated
-	text-decoration: none
 	
 .title_centering
 	max-width: 600px
 	text-align: center
-
-.divider
-	border-radius: 50%
-	background-color: $grey
-	width: 3px
-	height: 3px
-	margin: 7px 7px 0
 
 .logo
 	width: 100%
 	text-align: center
 	margin: 20px 0 50px 0
 
-.subway-identifier
-	width: 10px
-	height: 10px
-	border-radius: 50%
-	margin-top: 5px
-	margin-right: 10px
-
-	&_green
-		background-color: green
-
-	&_red
-		background-color: red
-
-	&_blue
-		background-color: blue
-
-	&__distance
-		color: $mediumgrey
-		margin-left: 20px
+.underlined-button
+	padding: 10px
+	border-bottom: 3px solid transparent
