@@ -1,7 +1,25 @@
-.column
-	width: 20%
-	margin-right: 5%
-	margin-top: 40px
+@media screen and (min-width: 620px)
+	.footer-links
+		display: flex
+		justify-content: center
+
+	.column
+		width: 20%
+		margin-right: 5%
+
+@media screen and (max-width: 619px)
+	.column
+		text-align: center
+		width: 170px
+		margin: 0 auto 
+		&-list
+			padding: 0
+
+		
+			
+	
+
+
 		
 .column-list
 	list-style-type: none

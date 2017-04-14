@@ -1,9 +1,53 @@
+@media screen and (min-width: 1280px)
+	.top-container-header
+		margin: 0
+		width: 75%
+	
+@media screen and (min-width: 880px) and (max-width: 1279px)
+	.top-container-header
+		margin: 0 auto
+		width: 80%
+
+@media screen and (max-width: 879px)
+	.top-container-header
+		width: 100%
+		padding: 0 1rem
+
+	.top-menu_left ul li:nth-child(n+3)
+		display: none
+
+	.top-menu_right
+		display: none
+	
 .top-container-header
-	@extend .centering-block
-	width: 100%
+	display: flex
+	font-size: 0.84rem
+	& ul
+		margin: 0
+		padding-left: 0
+
+.top-menu
+	padding: 0
+	list-style: none
+
+.top-menu_left
+	width: 60%
+	& li
+		display: inline-block
+		margin-right: 0.2rem
+	
+.top-menu_right
+	width: 40%
+	margin-top: 10px
+	margin-left: auto
+	text-align: right
+	& li
+		display: inline-block
+		margin-left: 0.2rem
 
 .top-button
 	@extend .underlined-button
+	max-width: 100%
 	color: white
 	padding: 0 10%
 	
@@ -13,23 +57,6 @@
 .top-button img
 	transform: translateY(-40%)
 	margin-right: 5px
-
-.top-menu
-	padding: 0
-	margin: 0
-	list-style: none
-    
-.top-menu li
-	display: inline-block
-	margin-right: 2%
-
-.top-menu_left
-	width: 60%
-	
-.top-menu_right
-	width: 40%
-	text-align: right
-	padding-top: 10px
 	
 .top-menu__logo
 	transform: translateY(35%)
@@ -42,7 +69,7 @@
 	background-color: #44b574
 
 .top-menu__button:hover
-	background-color: $grey
+	background-color: $hovergreen
       
 .top-menu__button img
 	padding-right: 7px
