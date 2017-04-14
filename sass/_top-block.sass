@@ -2,11 +2,17 @@
 	.top-container-header
 		margin: 0
 		width: 75%
+
+	.top-menu_right ul li:nth-child(3)
+		display: none
 	
 @media screen and (min-width: 880px) and (max-width: 1279px)
 	.top-container-header
 		margin: 0 auto
 		width: 80%
+
+	.top-menu_right ul li:nth-child(3)
+		display: none
 
 @media screen and (max-width: 879px)
 	.top-container-header
@@ -16,8 +22,14 @@
 	.top-menu_left ul li:nth-child(n+3)
 		display: none
 
-	.top-menu_right
+	.top-menu_right ul li:nth-child(-n+2)
 		display: none
+
+	.hamburger
+		font-size: 28px
+		&:hover
+			color: $lightgrey
+			cursor: pointer
 	
 .top-container-header
 	display: flex

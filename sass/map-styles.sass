@@ -4,9 +4,10 @@ $grey: #8c9ba5
 $lightgrey: #dfe3e6
 $mediumgrey: #9b9b9b
 $darkgrey: #4a4a4a
+$footercontent: #152935
 
 @import top-block
-@import link-block
+@import footer-block
 @import heading-block
 @import listing-block
 	
@@ -25,6 +26,22 @@ body
 
 	header
 		padding-left: 2rem
+
+	.map
+		float: right
+		margin-top: 162px
+		margin-right: 10px
+		overflow: hidden
+		max-height: auto	
+		max-width: 20%
+
+	#map-canvas
+		height: 599px
+		width: 448.2px
+
+		& img
+			max-width: none!important
+			background: none!important
 	
 @media screen and (min-width: 880px) and (max-width: 1279px)
 	.wrapper
